@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1> Audio and Video Example</h1>
+
+    <h2> Audio Example </h2>
+    <audio controls>
+        <source src="WhatsApp Video 2025-10-23 at 22.02.15_1f3c2265.mp4" type="audio/mp3">
+        <source src="media/audio-sample.ogg" type="audio/ogg">
+        your browser does not support the audio tag.
+    </audio>
+
+<h2> Video Example</h2>
+<video id="myVideo" width="640" controls>
+    <source src="WhatsApp Video 2025-10-23 at 22.02.17_de2e1c76.mp4" type="video/mp4">
+    <source src="media/video-sample.webm" type="video/webm">
+    <track src="captions.vtt" kind="subtitles" srclang="en" label="English">
+    your browser does not support the video tag.
+</video>
+
+<div>
+    <button onclick="toggle()">Play / pause</button>
+      <button onclick="rewind()"> Rewind</button>
+        <button onclick="fastForward()"> Fast Forward</button>
+          <button onclick="slowMotion()">Slow Motion</button>
+            <button onclick="normalSpeed()">Normal Speed</button>
+</div>
+    
+<script src="script.js"></script>
+</body>
+</html>
